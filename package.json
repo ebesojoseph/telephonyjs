@@ -1,0 +1,37 @@
+{
+  "name": "telephonyjs",
+  "version": "1.0.0",
+  "description": "an implementation of a javascript bill application ",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build && node src/index.js",
+    "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files"
+  },
+  "babel": {
+    "presets": ["@babel/preset-env"]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ebesojoseph/telephonyjs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ebesojoseph/telephonyjs/issues"
+  },
+  "homepage": "https://github.com/ebesojoseph/telephonyjs#readme",
+  "dependencies": {
+    "@babel/preset-env": "^7.15.6",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.3.0",
+    "nodemon": "^2.0.12",
+    "sequelize": "^6.6.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.5",
+    "babel-preset-env": "^1.7.0",
+    "rimraf": "^3.0.2"
+  }
+}
